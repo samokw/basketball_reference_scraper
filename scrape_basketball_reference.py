@@ -151,6 +151,7 @@ def scrape_player_stats_for_season(year: int, out_dir: str) -> None:
         "per_game": (f"https://www.basketball-reference.com/leagues/NBA_{year}_per_game.html", "per_game_stats"),
         "per_poss": (f"https://www.basketball-reference.com/leagues/NBA_{year}_per_poss.html", "per_poss_stats"),
         "advanced": (f"https://www.basketball-reference.com/leagues/NBA_{year}_advanced.html", "advanced_stats"),
+
     }
     os.makedirs(out_dir, exist_ok=True)
 
